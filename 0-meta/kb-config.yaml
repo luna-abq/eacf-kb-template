@@ -1,0 +1,27 @@
+# EACF Knowledge Base Configuration
+# Fill in the TODO values, then open a PR to complete setup.
+# Your AI agent will guide you through this if you ask.
+
+kb:
+  name: # TODO: your organisation's KB name (e.g. "Acme Corp Knowledge Base")
+  platform: git
+  main_ref: main
+  language: en  # Change to your language code if needed (e.g. ro, de, fr)
+  repository: # TODO: https://github.com/your-org/your-kb-repo
+
+owners:
+  1-company: # TODO: GitHub username of person who approves company-layer changes
+  2-departments: # TODO: GitHub username (can be same person)
+  3-products: # TODO: GitHub username
+  4-projects: # TODO: GitHub username
+
+notifications:
+  channel: # TODO: Slack channel name (e.g. #kb-updates) or email address
+  method: slack  # Change to: email | teams | none
+
+skills:
+  version: "1.0"
+  loaded:
+    - eacf-kb-core
+    - eacf-kb-write
+    - eacf-kb-git
